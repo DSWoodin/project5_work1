@@ -106,6 +106,21 @@ git branch 신규브랜치명
 git switch 브랜치명
 
 - 브랜치에서 소스 코딩, add, commit 등등 진행
+test01 브랜치에서 commit 한 내용은 main 브랜치로 이동하면 안 남아있음
+
+--------------------------------------
+브랜치 병합 -> 현재 위치에서 다른 위치에 있는것을 들고 옴
+main에 다른 브랜치를 병합하려면 main에서 작업
+
+git merge 브랜치명(main에서)
+git add .
+git commit -m "메시지"
+
+브랜치 삭제
+git branch -d 브랜치명
+
+브랜치 복구
+git branch 브랜치명 커밋번호
 
 
 
