@@ -40,6 +40,9 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 global 제외하고 코드 입력
 
+git config --global --unset user.email (계정정보 삭제)
+git config --global --unset user.name
+
 8. commit 정보 확인
 git log (빠져나올때는 q)
 
