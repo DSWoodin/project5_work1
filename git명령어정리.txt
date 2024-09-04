@@ -122,10 +122,10 @@ git branch -d 브랜치명
 브랜치 복구
 git branch 브랜치명 커밋번호
 
+커밋 로그 확인 (고급)
+git log --graph
+git log --graph --oneline
 
-
-
-
-
+--------------------------------------
 파일 제외 시키기
 .gitignore
