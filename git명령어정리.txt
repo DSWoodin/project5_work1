@@ -1,0 +1,77 @@
+2일차 - git
+pwd: print working directory
+ls, ls -al: 폴더 목록 확인
+cd /c: C드라이브로 이동 change directory
+mkdir project_5 C드라이브 바로 밑에 코드를 모아놓을 저장소 만들기
+cd project_5: project_5 폴더로 이동
+mkdir work1: git 관리할 폴더 만들기
+cd work1: work1 폴더로 이동
+git: git 명령어 소개
+clear: 화면 지우기
+vscode에서 select default profile에서 git bash로 설정
+git --version, git -v: 깃 버전 확인
+키보드 방향키를 누르면 이전에 사용했던 명령어들이 바로 뜸
+탭을 누르면 명령어 자동완성
+
+
+
+1. git으로 관리할 경로까지 이동
+
+2. 초기화(.git 폴더가 생성됨 - 숨겨진 파일로)
+git init
+-> ls -al (숨겨진 파일까지 확인)
+-> .git 폴더 삭제 (rm -rf .git)
+
+3. 브랜치 기본 이름 기본값 변경하기
+git config --global init.defaultBranch main (초기값 변경)
+git branch -M main (현재 브랜치 명 수정)
+
+4. git 상태확인 -> 상태를 확인해야 add할지, commit할지 판단
+git status
+
+5. git으로 관리하는 파일로 추가
+git add . (마침표는 현재 경로를 의미) or git add 파일명
+
+6. commit(해당 시점을 저장)
+git commit -m "커밋 메시지" (커밋 메세지는 왜 커밋을 했는지를 알 수 있게끔 작성)
+
+7. commit 이전에 계정정보 등록 (--global 옵션은 해당 컴퓨터 전체에 적용)
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+global 제외하고 코드 입력
+
+8. commit 정보 확인
+git log (빠져나올때는 q)
+
+-> 코드작성 add commit 코드작성 add commit
+
+9. 과제
+project_5/test1을 생성
+git으로 관리
+파일 생성은 알아서... 최소 커밋의 수는 5번이상 되도록 하세요
+
+로컬에 파일이 있으면 깃허브에는 비어있는 리포지토리를 만들어서 업로드
+
+-------------------------
+로컬 컴퓨터(코드있음)와 github 사이트(비어있음) 연결
+1. remote 정보 확인
+git remote
+git remote -v
+
+2. remote 추가
+git remote add 리모트이름 github리파지토리주소
+git remote add origin https://github.com/DSWoodin/project5_work1.git
+
+3. remote 삭제
+git remote rm 리모트이름
+git remote rm origin
+
+4. github에 데이터 넣기
+git push -u origin main (처음)
+git push
+
+5. 과제
+test.txt 깃허브에 업로드
+
+-------------------------------------
+clone 하기
