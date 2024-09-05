@@ -134,3 +134,9 @@ git log --graph --oneline
 app.ini -> app.ini 파일 제외
 /app.ini -> 현재 경로 밑에 있는 app.ini 파일 제외
 file/app.ini -> file 안에 잇는 app.ini 파일 제외
+
+git의 캐시값 때문에 적용이 안될 수 있다
+- 캐시 삭제하고 진행
+git rm -r --cached .
+git add .
+git commit -m "캐시 삭제"
