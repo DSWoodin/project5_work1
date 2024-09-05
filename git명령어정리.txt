@@ -128,4 +128,9 @@ git log --graph --oneline
 
 --------------------------------------
 파일 제외 시키기
-.gitignore
+.gitignore 파일 생성 (파일명이 .로 시작하면 숨겨진 파일)
+
+*.ini -> 확장자가 ini인 파일 제외
+app.ini -> app.ini 파일 제외
+/app.ini -> 현재 경로 밑에 있는 app.ini 파일 제외
+file/app.ini -> file 안에 잇는 app.ini 파일 제외
